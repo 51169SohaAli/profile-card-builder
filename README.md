@@ -7,9 +7,9 @@ This profile card builder allows the user to enter inputs and upon clicking the 
 # How to run 
 Open index.html directly in browser
 For React part: use this code to run with vite:
-1- cd react
-2- npm install
-3- npm run dev
+[cd react
+npm install
+npm run dev]
 
 # Tech Used
 HTML, CSS, JavaScript and React
