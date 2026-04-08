@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Card Builder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <fieldset class="fieldset-container">
+                <legend class="card-title">Profile Card Builder</legend>
+                <form method="post" action="/submit" class="form-container">
+                    <div class="form-group"> 
+                        <label for="fullname">Full Name</label> 
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required> 
+                    </div>
+                    <div class="form-group">
+                         <label for="jobtitle">Job Title</label> 
+                         <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter Job Title" required>
+                         </div>
+                    <div class="form-group"> 
+                        <label for="bio">Bio</label> 
+                        <textarea id="bio" name="bio" placeholder="Enter Bio" required>
+                        </textarea> 
+                    </div>
+                    <div class="error" id="errormessage"></div>
+                    <div class="form-group"> 
+                        <label for="avatarcolor">Avatar Color</label> 
+                        <input type="color" id="avatarcolor" name="avatarcolor"> 
+                    </div>
+                    <div class="form-group"> 
+                        <label>Skills</label>
+                        <div class="skill-item"> 
+                            <input type="checkbox" id="html" name="html" class="skill" value="HTML">
+                             <label for="html">HTML</label> 
+                            </div>
+                        <div class="skill-item"> 
+                            <input type="checkbox" id="css" name="css" class="skill" value="CSS">
+                            <label for="css">CSS</label> 
+                        </div>
+                        <div class="skill-item"> 
+                            <input type="checkbox" id="javascript" name="javascript" class="skill" value="JavaScript"> 
+                                <label for="javascript">JavaScript</label> 
+                            </div>
+                        <div class="skill-item"> 
+                            <input type="checkbox" id="react" name="react" class="skill" value="React"> <label for="react">React</label> </div>
+                    </div>
+                    <div class="success-message" id="successmessage"></div> <button type="submit" class="btn"
+                        id="generate-card-btn">Generate Card</button>
+                </form>
+            </fieldset>
+        </div>
+        <div class="right-panel">
+            <div class="card" id="card">
+                <h2>Card Preview</h2>
+                <div class="avatar-circle" id="avatar-circle"></div>
+                <h2 id="card-name"></h2>
+                <p id="card-jobtitle"></p>
+                <div class="bio-text" id="bio-text"></div>
+                <div class="skills-container" id="skills-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
