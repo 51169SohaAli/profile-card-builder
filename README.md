@@ -19,3 +19,6 @@ HTML, CSS, JavaScript and React
 
 # What I'd Improve
 I would improve the UI for the right panel.
+
+# Additional Note 
+Due to limited time, I forgot to add the CSS in App.css. If I would add that, it would have the same UI interface and style as in Profile Card built using HTML, CSS, and JavaScript.
